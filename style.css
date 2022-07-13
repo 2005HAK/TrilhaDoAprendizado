@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(145, 145, 145);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    min-width: 870px;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    display: flex;
+    background-color: rgb(19, 34, 122);
+    border: 2px solid black;
+    flex-direction: row;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    min-width: 870px;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(19, 34, 122);
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    padding: 2px;
+}
+
+h4 {
+    margin: 0;
+}
+
+.informacoes {
+    padding-left: 6px;
+    margin: 0;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    min-width: 630px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#ta {
+    margin: 0;
+    color: rgb(218, 218, 218);
+}
+
+.titulo {
+    width: 600px;
+    margin: 10px;
+    align-self: flex-end;
+}
+
+.sobre {
+    margin: 10px;
+    display: flex;
+    width: 650px;
+    justify-content: end;
+    align-self: flex-end;
+}
+
+#refsobre {
+    color: white;
+}
+
+.icone {
+    margin: 10px;
+    width: 100px;
+}
+
+.topicos {
+    min-width: 260px;
+    background-color: rgb(33, 150, 228);
+    width: 325px;
+}
+
+.conteudos {
+    padding: 2px;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.contFoot {
+    color: white;
+    margin: 5px;
+}
