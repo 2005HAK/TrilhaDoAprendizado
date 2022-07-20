@@ -68,7 +68,8 @@ h4 {
 .sobre {
     margin: 10px;
     display: flex;
-    width: 650px;
+    width: 1150px;
+    min-width: 500px;
     justify-content: end;
     align-self: flex-end;
 }
