@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(145, 145, 145);
+    background-image: url(ImagensTA/background.jpg);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -9,7 +9,7 @@ header {
     height: auto;
     margin: 0px;
     display: flex;
-    background-color: rgb(19, 34, 122);
+    background-color: rgba(19, 34, 122, 0.9);
     border: 2px solid black;
     flex-direction: row;
 }
@@ -26,7 +26,7 @@ footer {
     margin: 0;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(19, 34, 122);
+    background-color: rgb(19, 34, 122, 0.9);
     border-right: 2px solid black;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
@@ -51,7 +51,8 @@ h4 {
     border-bottom: 2px solid black;
     min-width: 630px;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(150, 150, 150), rgb(187, 187, 187), rgb(187, 187, 187), rgb(150, 150, 150) );
+    
 }
 
 #ta {
@@ -78,6 +79,10 @@ h4 {
     color: white;
 }
 
+#logo {
+    border-radius: 15%;
+}
+
 .icone {
     margin: 10px;
     width: 100px;
@@ -85,7 +90,7 @@ h4 {
 
 .topicos {
     min-width: 260px;
-    background-color: rgb(33, 150, 228);
+    background-color: rgb(63, 153, 212);
     width: 325px;
 }
 
