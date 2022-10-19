@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    background-image: linear-gradient(to left, rgb(0, 0, 160), rgb(0, 27, 133), rgb(0, 0, 136), rgb(0, 4, 66));
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(27, 27, 27);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.logo img {
+    width: 60%;
+    padding-top: 30px;
+}
+
+.navegacao{
+    overflow: hidden;
+}
+
+.navegacao a{
+    float: right;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.navegacao a:hover {
+    color: rgb(255, 0, 0);
+    background-color: rgb(22, 22, 22);
+}
+
+.conteudo {
+    margin: 10px 2px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 2px;
+    text-align: justify;
+}
+
+.conteudo h2 {
+    color: rgb(24, 55, 139);
+}
+
+.central {
+    width:450%;
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+}
+
+.rodape {
+    font-size: 12pt;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .principal {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .central {
+        width: 92.5%;
+    }
+}

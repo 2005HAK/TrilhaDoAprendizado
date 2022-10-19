@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="img/favicon_io/favicon.ico" type="image/x-icon">
+        
+        <title>Hyperlinks</title>
+
+    </head>
+
+    <body><font face="verdana">
+
+        <h1 id="inicio">Hyperlinks</h1>
+
+        <p>São elementos dentro de um <strong>Hipertexto</strong> que permitem pular de um ponto a outro do mesmo documento, ou redirecionar o usuário a outro documento.<br> 
+        A tag que define um hiperlink é: &lta&gt</p>
+
+        <p><b>Sintaxe:</b> &lta href="url" target="_self"&gttexto que conterá o hiperlink&lt/a&gt</p>
+
+        <p><i>OBS: O texto que conterá o hiperlink para o redirecionamento não precisa necessáriamente ser um texto, pode ser qualquer outro elemento do documento HTML, como por exemplo uma imagem.</i></p>
+
+        <h4>Elementos:</h4>
+        <ul>
+            <li><b>href</b></li>
+            <p>É o atributo onde fica o link para o qual o usuário será redirecionado ao clicar.</p>
+
+            <li><b>texto que conterá o link</b></li>
+            <p>É o elemento que fica visível ao usuário e, ao passar o mouse por cima, a seta da a opção de clicar no elemento.</p>
+
+            <li><b>target</b></li>
+            <p>É o atributo que especifica onde o link sera aberto, possuindo alguns valores, como:</p>
+            <ul>
+                <li><b>_self</b></li>
+                <p>Modo padrão, mesmo que o atributo target não seja especificado, será esse o valor utilizado. Abrirá o ducumento na mesma janela em que foi clicado.</p>
+
+                <li><b>_blank</b></li>
+                <p>Abre o link em uma nova janela.</p>
+
+            </ul>
+
+        </ul>
+
+        <h4>Exemplos:</h4>
+
+        <ol type="1">
+
+            <li>Link com abertura em uma nova guia: <a href="https://www.youtube.com/channel/UC9JwOUxGWyfkbatL92SCevw" target="_blank">Youtube</a></li>
+            <p><i>Sintaxe: &lta href="https://www.youtube.com/channel/UC9JwOUxGWyfkbatL92SCevw" target="_blank"&gtYoutube&lt/a&gt</i></p>
+
+            <li id="voltar">Link com abertura na mesma guia: <a href="ExemploMesmaGuia.html">Mesma Guia</a></li>
+            <p><i>Sintaxe: &lta href="ExemploMesmaGuia.html"&gtMesma Guia&lt/a&gt</p>
+
+            <p>Nesse exemplo, de abertura na mesma guia, também foi utilizado a possibilidade de abrir um outro documento HTML, utilizando no lugar do URL o endereço da pasta: "ExemploMesmaGuia.html". Ou se não tivesse na mesma hierarquia: nome_da_pasta/ExemploMesmaGuia.html.</i></p>
+            <figure>
+
+                <img src="img/Exemplo1.png" width="200px" alt="Exemplo de endereço da pasta">
+
+                <figcaption>
+
+                    <font size="2">Documentos HTML utilizados</font>
+
+                </figcaption>
+
+            </figure>
+
+            <li>Link para fazer o redirecionamento no mesmo documento: <a href="#inicio">Inicio</a></li>
+            <p>Nesse caso o link envia o usuário para uma parte no mesmo documento, e para isso o lugar onde será redirecionado precisa estar marcada, como por exemplo o titulo hiperlink no começo da página, ele foi marcado da seguinte forma: &lth1 id="inicio"&gtHyperlinks&lt/h1&gt. Foi colocado um id na tag de título, e poderia ter sido colocado em qualquer outra tag, como uma tag &ltp&gt por exemplo.</p>
+
+            <p><i>Também pode ser utilizado a seguinte sintaxe: &lth1&gt&lta name="inicio"&gt&lt/a&gtHyperlinks&lt/h1&gt, mas deste modo é utilizado uma tag a mais, portanto o mais pratico é utilizar id.</i></p>
+
+            <p>E para referenciar esse id que está em uma das tags do documento, uma hashtag(#) deve ser colocada antes do nome, desta forma: &lta href="#inicio"&gtInicio&lt/a&gt</p>
+
+            <li>Link com imagem:</li>
+            <figure>
+
+                <a href="https://pt.wikipedia.org/wiki/HTML" target="_blank">
+                <img src="img/html.jpg" width="200px" alt="html link">
+                </a>
+
+            </figure>
+
+            <p>Pode redirecionar para uma outra página.</p>
+
+            <figure>
+
+                <a href="img/html.jpg" target="_blank">
+                    <img src="img/html.jpg" width="200px" alt="html link">
+                </a>
+
+            </figure>
+
+            <p>Pode abrir a própria imagem em uma nova guia e fazer qualquer outro redirecionamento, seguindo a mesma sintaxe dos outros exemplos, com a diferença de que no lugar do texto que conteria o link é colocado uma imagem.</p>
+
+        </ol>
+
+        <h4>Referências:</h4>
+
+        <p>Links HTML. <b>W3schools</b>. Disponível em: <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">https://www.w3schools.com/html/html_links.asp</a>. Acesso em: 06 de maio de 2022.</p>
+
+    </font></body>
+
+</html>

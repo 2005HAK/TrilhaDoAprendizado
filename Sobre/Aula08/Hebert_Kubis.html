@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+
+        <style> 
+
+          body{
+           background-color: rgb(190, 190, 190);
+          }
+
+        </style><!--Estava somente testando-->
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="img/favicon_io/favicon.ico" type="image/x-icon">
+        
+        <title>Tags</title>
+
+    </head>
+
+    <body><font face="verdana">
+    
+        <h1 id="Inicio">Tags</h1>
+
+        <hr><hr>
+
+        <h3>Sumário</h3>
+
+        <ol type="1">
+
+          <li><a href="#table">table</a></li>
+          <li><a href="#del">del</a></li>
+          <li><a href="#ins">ins</a></li>
+          <li><a href="#sub">sub</a></li>
+          <li><a href="#sup">sup</a></li>
+          <li><a href="#blockquote">blockquote</a></li>
+          <li><a href="#q">q</a></li>
+          <li><a href="#abbr">abbr</a></li>
+          <li><a href="#address">address</a></li>
+          <li><a href="#cite">cite</a></li>
+          <li><a href="#bdo">bdo</a></li>
+          <li><a href="#code">code</a></li>
+          <li><a href="#pre">pre</a></li>
+          <li><a href="#kbd">kbd</a></li>
+          <li><a href="#referencias">Referências</a></li>
+
+        </ol>
+
+        <hr>
+
+        <h3 id="table">&lttable&gt</h3>
+
+        <p>É a tag que permite contruir uma tabela definindo, dentro desta, as linhas e colunas.</p>
+        <p>As principais tags e atributos da tabela são:</p>
+
+        <dl>
+
+            <dt><b>&lttr&gt</b>
+              <dd>Representa uma linha da tabela, e contém as cédulas.</dd>
+            </dt>
+
+            <dt><b>&lttd&gt</b>
+              <dd>Representa uma cédula da tabela.</dd>
+            </dt>
+
+
+            <dt><b>&ltth&gt</b>
+              <dd>Definir as cédulas como cabeçalho. Podem ser definidas na primeira linha, ou na primeira coluna de cada linha para definir os títulos na vertical.</dd>
+            </dt>
+
+            <dt><b>border</b></dt>
+              <dd>Não é uma tag, é um atributo utilizado na tag table para definir o tamanho da borda em volta da tabela.</dd>
+
+            <dt><b>nbsp</b></dt>
+              <dd>Está é a entidade que define um espaço em branco (ela possui um "&" antes do nbsp). Ela é utilizada porque o navegador pode não conseguir ler uma cédula vazia da maneira correta se simplesmente não houver nada dentro.</dd>
+
+            <dt><b>colspan</b></dt>
+              <dd>Faz a mesclagem de duas colunas. É utilizado na tag &ltth&gt e a sintaxe é: &ltth colspan="x"&gtalgo&lt/th&gt, onde no lugar do "x" é inserido o número de colunas que serão mescladas.</dd>
+
+            <dt><b>rowspan</b></dt>
+              <dd>Segue o mesmo esquema do "colspan", com a diferença de que ao invés de mesclar colunas, irá mesclar linhas.</dd>
+
+        </dl>
+
+        <p><b>Estrutura:</b></p>
+        
+        <pre><font size="4">&lttable border="1"&gt
+   &lttr&gt
+     &ltth&gtCod.&lt/th&gt
+     &ltth&gtNome&lt/th&gt
+     &ltth&gttelefone&lt/th&gt
+   &lt/tr&gt
+
+   &lttr&gt
+     &ltth&gt1&lt/th&gt
+     &ltth&gtJosé&lt/th&gt
+     &ltth&gt993485216&lt/th&gt
+   &lt/tr&gt
+
+   &lttr&gt
+     &ltth&gt2&lt/th&gt
+     &ltth&gtEspinócio&lt/th&gt
+     &ltth&gt&.nbsp&lt/th&gt
+   &lt/tr&gt
+&lt/table&gt</font></pre>
+
+        <p><i><b>Obs:</b> O ponto entre o "&" e o "nbsp" é somente para que ele fique visível.</i></p>
+
+        <p><b>Exemplo da estrutura acima:</b></p>
+        
+        <table border="1">
+            <tr>
+              <th>Cod.</th>
+              <th>Nome</th>
+              <th>Telefone</th>
+            </tr>
+
+            <tr>
+              <td>1</td>
+              <td>José</td>
+              <td>993485216</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Espinócio</td>
+              <td>&nbsp</td>
+            </tr>
+          </table>
+
+          <p></p>
+
+          <hr>
+
+          <h3 id="del">&ltdel&gt</h3>
+
+          <p>Define que o texto foi excluido de um documento, mas é mantido para que se tenha um histórico da modificação que foi feita. Os navegadores normalmente riscam uma linha atravez do texto excluido.</p>
+
+          <p><b>Estrutura:</b></p>
+
+          <pre><font size="4">&ltp&gtEste texto vai usar a tag del &ltdel&gtagora.&lt/del&gt&lt/p&gt</font></pre>
+
+          <p><b>Exemplo da estrutura acima:</b></p>
+
+          <p>Este texto vai usar a tag del <del>agora.</del></p>
+
+          <hr>
+
+          <h3 id="ins">&ltins&gt</h3>
+
+          <p>Define um texto que foi inserido em um documento. Ao utilizar em conjunto com a tag &ltdel&gt, se tem noção do texto que foi retirado e qual foi inserido no lugar. Os navegadores normalmente sublinham o texto inserido.</p>
+
+          <p><b>Estrutura:</b></p>
+
+          <pre><font size="4">&ltp&gtEste texto vai usar a tag &ltdel&gtdel&lt/del&gt &ltins&gtins&lt/ins&gt agora.&lt/p&gt</font></pre>
+
+          <p><b>Exemplo da estrutura acima:</b></p>
+
+          <p>Este texto vai usar a tag <del>del</del> <ins>ins</ins> agora.</p>
+
+          <hr>
+
+          <h3 id="sub">&ltsub&gt</h3>
+
+          <p>Define um texto como subscrito, aparecendo meio caracter abaixo da linha normal e com letras menores. É muito utilizado para representar fórmulas químicas.</p>
+
+          <p><b>Estrutura:</b></p>
+
+          <pre><font size="4">&ltp&gtFórmula da água: H&ltsub&gt2&lt/sub&gtO&lt/p&gt</font></pre>
+
+          <p><b>Exemplo da estrutura acima:</b></p>
+
+          <p>Fórmula da água: H<sub>2</sub>O</p>
+
+          <hr>
+
+          <h3 id="sup">&ltsup&gt</h3>
+
+          <p>Define um texto como sobrescrito, aparecendo meio caracter acima da linha normal e em caracter menor. Utilizado, por exemplo, para escrever formulas matemáticas que possuem potenciação, ou indicar um significado (como nos livros).</p>
+
+          <p><b>Estrutura:</b></p>
+
+          <pre><font size="4">&ltp&gtTim Berners-Lee  inventou o WWW&ltsup&gt[3]&lt/sup&gt&lt/p&gt
+&ltp&gt&ltsup&gt[3]&lt/sup&gtWorld Wide Web (em português, Rede de Alcance Mundial).&lt/p&gt</font></pre>
+
+          <p><b>Exemplo da estrutura acima:</b></p>
+
+          <p>Tim Berners-Lee  inventou o WWW<sup>[3]</sup></p>
+          <p><sup>[3]</sup>World Wide Web (em português, Rede de Alcance Mundial).</p>
+
+          <hr>
+
+          <h3 id="blockquote">&ltblockquote&gt</h3>
+
+          <p>Especifica uma seção que é citada de outra fonte, aparecendo recuado em relação ao texto normal. Usado em citações longas.</p>
+
+          <p><b>Estrutura:</b></p>
+
+          <pre><font size="4">&ltblockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote"&gt
+
+   O Elemento HTML &ltblockquote&gt (ou Elemento HTML de citação de bloco) indica que o texto incluído é 
+   uma longa citação. Normalmente, este é processado visualmente pelo recuo (ver Notas sobre como mudá-lo).
+   A URL para a fonte da citação pode ser dada usando o atributo cite, enquanto uma representação de
+   texto da fonte pode ser dada usando o &ltcite&gt elemento.
+
+&lt/blockquote&gt</font></pre>
+
+          <p><b>Exemplo da esrtutura acima:</b></p>
+
+          <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote">
+
+            O Elemento HTML &ltblockquote&gt (ou Elemento HTML de citação de bloco) indica que o texto incluído é uma longa citação. Normalmente, este é processado visualmente pelo recuo (ver Notas sobre como mudá-lo). A URL para a fonte da citação pode ser dada usando o atributo cite, enquanto uma representação de texto da fonte pode ser dada usando o &ltcite&gt elemento.
+
+          </blockquote>
+
+          <hr>
+
+          <h3 id="q">&ltq&gt</h3>
+
+          <p>Utilizado para pequenas citações. Não recua o texto, somente insere aspas nas duas pontas.</p>
+
+          <p><b>Estrutura:</b></p>
+
+          <pre><font size="4">&ltp&gtO site W3Schools diz que &ltq cite="https://www.w3schools.com/tags/tag_q.asp"&gtA &ltq&gttag define uma cotação curta&lt/q&gt.&lt/p&gt</font></pre>
+
+          <p><b>Exemplo da estrutura acima:</b></p>
+
+          <p>O site W3Schools diz que <q cite="https://www.w3schools.com/tags/tag_q.asp">A &ltq&gttag  define uma citação curta</q>.</p>
+
+          <p><i><b>Obs:</b> O atibuto "cite" é utilizado tanto na tag "blockquote" quanto na "q", e seu valor designa uma URL fonte da informação, ou uma mensagem para a informação citada.</i></p>
+          <hr>
+
+          <h3 id="abbr">&ltabbr&gt</h3>
+
+          <p>Define uma abreviação de uma palavra, com "HTML" por exemplo. Utilizando o atributo title na tag &ltabbr&gt, ao passar o mouse por cima, a descrição definida neste atributo aparecerá.</p>
+
+          <p><b>Estrutura:</b></p>
+
+          <pre><font size="4">&ltp&gtUso da tag &ltabbr title="Tag de abreviação"&gt&ltabbr&gt&lt/abbr&gt&lt/p&gt</font></pre>
+
+          <p><b>Exemplo da estrutura acima:</b></p>
+
+          <p>Uso da tag <abbr title="Tag de abreviação">&ltabbr&gt</abbr></p>
+
+          <hr>
+
+          <h3 id="address">&ltaddress&gt</h3>
+
+          <p>Usado para inserir informações de contato do autor de um documento ou artigo, como: e-mail, URL, telefone, etc. Os navegadores normalmente deixam o texto que esta dentro da tag &ltaddrress&gt em itálico, e uma quebra de linha é adicionada antes e depois da tag.</p>
+
+          <p><b>Estrutura:</b></p>
+
+          <pre><font size="4">&ltaddress&gt
+   Contato: &lta href="mailto:hebertakubis@outlook.com"&gtHebert A. Kubis&lt/a&gt.&ltbr&gt
+   Site:&ltbr&gt
+   www.hak.com&ltbr&gt
+   Irati, PR&ltbr&gt
+   Brasil
+&lt/address&gt</font></pre>
+
+          <p><b>Exemplo da estrutura acima:</b></p>
+
+          <address>
+            Contato: <a href="mailto:hebertakubis@outlook.com">Hebert A. Kubis</a>.<br>
+            Site:<br>
+            www.hak.com<br>
+            Irati, PR<br>
+            Brasil
+          </address>
+
+          <hr>
+
+          <h3 id="cite">&ltcite&gt</h3>
+
+          <p>Utilizado para definir um nome de uma arte, por exemplo: um poema, uma musica, um filme, etc. Não é utilizado no nome do autor, somente no título da obra.</p>
+          
+          <p><b>Estrutura:</b></p>
+
+          <pre><font size="4">&ltfigure&gt
+
+   &ltimg src="img/Redes de computadores" width="200px" alt="Redes de computadores"&gt
+
+&lt/figure&gt
+
+&ltp&gt&ltcite&gtRedes de computadores&lt/cite&gt de Andrew Tanenbaum, Nick Feamster e David Wetherall. 1ª publicação em 1988.&lt/p&gt</font></pre>
+
+          <p><b>Exemplo da estrutura acima:</b></p>
+
+          <figure>
+
+            <img src="img/Redes de coputadores.jpg" width="200px" alt="Redes de computadores">
+
+          </figure>
+
+          <p><cite>Redes de computadores</cite> de Andrew Tanenbaum, Nick Feamster e David Wetherall. 1ª publicação em 1988.</p>
+
+          <hr>
+
+          <h3 id="bdo">&lt<abbr title="Substituição bidirecional">bdo</abbr>&gt</h3>
+
+          <p>Utilizada para mudar a direção do texto.</p>
+
+          <p><b>Estrutura:</b></p>
+
+          <pre><font size="4">&ltp&gtO texto abaixo irá da direita para a esquerda&ltbr&gt
+&ltbdo dir="rtl"&gtOlha só como é verdade&lt/bdo&gt&ltbr&gt
+&ltbdo dir="ltr"&gtE esse é normal.&lt/bdo&gt&lt/p&gt</font></pre>
+
+          <p><b>Exemplo da estrutura acima:</b></p>
+
+          <p>O texto abaixo irá da direita para a esquerda:<br>
+          <bdo dir="rtl">Olha só como é verdade</bdo><br>
+          <bdo dir="ltr">E esse é normal</bdo></p>
+
+          <hr>
+
+          <h3 id="code">&ltcode&gt</h3>
+
+          <p>Define que um trecho de um texto é um código de computador.</p>
+
+          <p><b>Estrutura:</b></p>
+
+          <pre><font size="4">&ltp&gtEm CSS o &ltcode&gtbackground-color&lt/code&gt define o fundo de um elemento, como por exemplo o findo desta pagina.&lt/p&gt</font></pre>
+
+          <p><b>Exemplo da estrutura acima:</b></p>
+
+          <p>Em CSS o <code>background-color</code> define o fundo de um elemento, como por exemplo o fundo desta página.</p>
+
+          <hr>
+
+          <h3 id="pre">&ltpre&gt</h3>
+
+          <p>Texto pré-formatado, ou seja, tudo oque for escuito dentro de uma tag &ltpre&gt será exibido do mesmo modo que foi escrito, preservando inclusive as quebras de linha.</p>
+
+          <p><b>Estrutura:</b></p>
+
+          <pre><font size="4">&ltp&gt&ltpre&gt
+Este
+é
+um texto
+escrito em
+uma tag
+pre
+&lt/pre&gt&lt/p&gt</font></pre>
+
+          <p><b>Exemplo da estrutura acima:</b></p>
+
+            <p><pre>
+            Este
+            é
+            um texto
+            escrito em
+            uma tag
+            pre
+            </pre></p>
+
+          <p><i><b>Obs:</b> Também persebe-se que o texto adiquire o mesmo recuo que possui dentro do documento HTML</i></p>
+
+          <figure>
+
+            <img src="img/Exemplo do recuo.png" alt="Exemplo do recuo">
+
+          </figure>
+
+          <hr>
+
+          <h3 id="kbd">&ltkbd&gt</h3>
+
+          <p>Utilizado para definir uma entrada de teclado.</p>
+
+          <p><b>Estrutura:</b></p>
+
+          <pre><font size="4">&ltp&gtPara acessar o executar do Windows precione as teclas &ltkbd&gtWin&lt/kbd&gt + &ltkbd&gtR&lt/kbd&gt.&lt/p&gt</font></pre>
+
+          <p><b>Exemplo da estrutura acima:</b></p>
+
+          <p>Para acessar o executar do Windows precione as teclas <kbd>Win</kbd> + <kbd>R</kbd>.</p>
+
+          <hr>
+          <p><a href="#Inicio">Inicio</a></p>
+          <hr>
+
+          <h3 id="referencias">Referências</h3>
+
+          <p><b>HTML: Linguagem de Marcação de Hipertexto</b>. Mdn, 2021. Disponível em: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTML</a>. Acesso em: 19 de maio de 2022.</p>
+
+          <p><b>Referência de elemento HTML</b>. W3Schools, 2022. Disponível em: <a href="https://www.w3schools.com/TAgs/" target="_blank">https://www.w3schools.com/TAgs/</a>. Acesso em: 19 de maio de 2022.</p>
+
+          <p>Marques, Rafael.<b> Tabela HTML: como criar e utilizar tabelas em sua página</b>.Home Host, 2020. Disponível em: <a href="https://www.homehost.com.br/blog/criar-sites/tabela-html/" target="_blank">https://www.homehost.com.br/blog/criar-sites/tabela-html/</a>. Acesso em: 24 de maio de 2022.</p>
+
+          <p><b>Qual a diferença entre a tag &ltdel&gt e &lts&gt</b>. Stack overflow, 2019. Disponível em: <a href="https://pt.stackoverflow.com/questions/348667/qual-a-diferen%C3%A7a-entre-a-tag-del-e-s" target="_blank">https://pt.stackoverflow.com/questions/348667/qual-a-diferen%C3%A7a-entre-a-tag-del-e-s</a>. Acesso em: 24 de maio de 2022.</p>
+
+          <p><b>Definição e uso de: &ltSUB&gt&lt/SUB&gt</b>. Portal de Finanças. Disponível em: <a href="https://www.portaldefinancas.com/html/sub.html" target="_blank">https://www.portaldefinancas.com/html/sub.html</a>. Acesso em: 24 de maio de 2022.</p>
+
+          <p><b>Definição e uso de: &ltSUP&gt&lt/SUP&gt</b>. Portal de Finanças. Disponível em: <a href="https://www.portaldefinancas.com/html/sup.html" target="_blank">https://www.portaldefinancas.com/html/sup.html</a>. Acesso em: 24 de maio de 2022.</p>
+
+          <p><b>&ltq&gt</b>. Mdn, 2021. Disponível em: <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/q" target="_blank">https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/q</a>. Acesso em: 24 de maio de 2022.</p>
+
+    </font></body>
+
+</html>

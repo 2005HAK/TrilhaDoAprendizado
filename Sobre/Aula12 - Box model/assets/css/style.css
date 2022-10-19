@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(179, 179, 179);
+    margin: 30px;/*Utilizando magem como shorthand
+    margin-top: 50px; de cima
+    margin-right: 30px; direita
+    margin-bottom: 50px; de baixo
+    margin-left: 30px; esquerda*/
+    border: 5px double black;
+    padding: 10px;
+    /*padding: 500px 10px; primeiro para o top e bottom e segundo para right e left*/
+}
+
+h1 {
+    color: white;
+    background-color: rgb(37, 37, 231);
+    padding: 3px;
+    border: 2px solid black;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+span {
+    background-color: rgb(255, 241, 52);
+}
+
+p {
+    background-color: aqua;
+    display: inline;/*Altera a propriedade de block level para inline level e vice-versa*/
+}
+
+div {
+    border: solid;
+    margin: 10px;
+    padding: 10px;
+    background-color: cornflowerblue;
+}
+
+.box1 {
+    background-color: brown;
+    position: static;
+    width: 400px;
+    height: 50px;
+    
+}
+
+.box2 {
+    background-color: rgb(131, 85, 85);
+    position: relative;
+    width: 400px;
+    height: 50px;
+    top: 55px;
+    left: 400px;
+}
+
+.box3 {
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    top: 0;
+    right: 0;
+}
+
+.box4 {
+    background-color: rgb(88, 39, 179);
+    position: fixed;
+    width: 400px;
+    height: 50px;
+    top: 800px;/*propriedades top, right, bottom e left so*/ 
+    left: 500px;/*funcionam junto com o position*/
+}
+
+.box5 {
+    background-color: rgb(238, 26, 210);
+    position: sticky;
+    width: 400px;
+    height: 50px;
+    left: 150px;
+    bottom: 200px;
+}
