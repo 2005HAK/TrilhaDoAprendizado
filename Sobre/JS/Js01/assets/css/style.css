@@ -1,0 +1,83 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+header {
+    background-color: #000000;
+    margin: .5em;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 .5em #565656;
+    align-items: center;
+    padding: .5em;
+}
+
+figure {
+    margin: .1em;
+    padding: .3em;
+    background-image: linear-gradient(#f0f8ff, #cfcfcf, #676767, #282828);
+    border-radius: 50%;
+}
+
+img {
+    width: 100px;
+}
+
+h1 {
+    color: #f0f8ff;
+    margin: 0;
+    text-align: center;
+    padding: .5em;
+    font-size: 30pt;
+}
+
+article {
+    margin: 0 .5em 0 .5em;
+    background-color: #fdfae1;
+    box-shadow:0 0 .5em #565656;
+    padding: 1em;
+}
+
+h2 {
+    margin: 0;
+    padding: .5em;
+}
+
+h3 {
+    margin: 0;
+    padding: 1em;
+}
+
+p {
+    margin: 0;
+    padding: 0 1em 0 1em;
+}
+
+button {
+    margin: .3em;
+    padding: .3em;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    margin: .5em;
+    text-align: center;
+    padding: .5em;
+    box-shadow: 0 0 .5em #565656;
+}
+
+a {
+    text-decoration: none;
+    color: #0000ff;
+    padding: .5em;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+.links {
+    margin: .6em .6em .6em 0;
+}
