@@ -1,0 +1,33 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+article {
+    margin: .5em;
+    padding: .5em;
+    background-color: rgb(225, 235, 255);
+}
+
+#perfil {
+    display: flex;
+    flex-direction: row;
+    background-color: #000000;
+    border-radius: 5em;
+    align-items: center;
+}
+
+img {
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 20pt;
+}
