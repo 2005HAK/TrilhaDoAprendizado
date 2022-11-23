@@ -107,10 +107,6 @@ nav {
     transition: .2s;
 }
 
-.superClass:hover .subClass{
-    visibility: visible;
-}
-
 .subClass a {
     border-top: 0.1em solid black;
     text-align: center;
@@ -120,6 +116,11 @@ nav {
     color: white; 
     text-decoration: none;
     background-color: #383838;
+}
+
+.superClass:hover .subClass{
+    visibility: visible;
+    transition: all .2s;
 }
 
 .itens:hover {
