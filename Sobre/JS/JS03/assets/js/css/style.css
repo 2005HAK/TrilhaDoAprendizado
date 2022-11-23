@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #f0ffff;
+}
+
+h1 {
+    background-color: #000000;
+    color: #ffffff;
+    margin: .1em;
+    padding: .5em;
+}
+
+p {
+    margin: .1em;
+    padding: .5em;
+}
