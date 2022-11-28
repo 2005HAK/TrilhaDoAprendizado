@@ -5,6 +5,18 @@ body {
     padding: 0;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #6b6b6b;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #1100ff;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -21,6 +33,7 @@ figure {
 
 #icone {
     height: 5em;
+    margin-left: 1em;
 }
 
 h1 {
@@ -35,7 +48,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-right: 5em;
+    margin-right: 4em;
 }
 
 .wrapper {
@@ -109,20 +122,20 @@ h1 {
 .background-menu {
     position: absolute;
     background-color: #0400ff;
-    top: -300px;
-    right: -300px;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
+    top: 0;
+    right: 0;
+    height: 1px;
+    width: 1px;
+    border-radius: 30% 0 30% 30%;
     z-index: -1;
     visibility: hidden;
     transition: 400ms ease-in-out 0s;
 }
 
 .menu-itens {
-    position: fixed;
-    top: 0;
-    right: 0;
+    position: absolute;
+    top: 150px;
+    right: 150px;
     width: 0;
     height: 0;
     display: flex;
@@ -159,7 +172,6 @@ h1 {
     transition: all 400ms;
 }
 
-
 /*Animação menu*/
 
 #toggle:checked ~ .checkbox {
@@ -170,13 +182,15 @@ h1 {
 
 #toggle:checked ~ .background-menu {
     visibility: visible;
-    width: 1000px;
-    height: 1000px;
+    width: 600px;
+    height: 600px;
     box-shadow: 0 0 4em #000000;
     z-index: 1;
 }
 
 #toggle:checked ~ .menu-itens {
+    right: 0;
+    top: 0;
     visibility: visible;
     height: 100%;
     width: 50%;
@@ -190,12 +204,29 @@ article {
     margin: .5em;
     padding: 3em;
     box-shadow: 0 .1em 1em #6b6b6b;
+    font-size: 14pt;
 }
 
-.page{
+p {
+    margin: .5em;
+}
+
+#topicos {
+    display: none;
+}
+
+.conteudo {
+    visibility: hidden;
+}
+
+#topicos:checked ~ .conteudo{
+    visibility: visible;
+}
+
+.page, .button{
     color: #ffffff;
     background-color: #000000;
-    padding: .1em;
+    padding: .2em;
     text-align: center;
     border-radius: 5em;
     margin-bottom: 1em;
@@ -203,6 +234,26 @@ article {
     text-shadow: .1em .1em .1em #1100ff;
 }
 
+.nomeperfil {
+    background-color: #5f5f5f;
+    border-radius: 6em;
+    padding: .1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#perfil{
+    width: 10em;
+}
+
+#perfil img{
+    width: 8em;
+    height: 8em;
+    border: .2em solid #000000;
+    border-radius: 50%;
+    box-shadow: 0 0 .4em #f8f8f8;
+}
 .content {
     margin: 2em;
 }
