@@ -134,15 +134,17 @@ h1 {
 
 .menu-itens {
     position: absolute;
-    top: 150px;
-    right: 150px;
-    width: 0;
-    height: 0;
-    display: flex;
+    top: 0;
+    right: 0px;
+    width: 1px;
+    height: 1px;
+    font-size: 8pt;
+    text-shadow:.1em .1em    .1em #84a9f5;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 2;
-    opacity: 0;
+    opacity: 1;
     visibility: hidden;
     transition: 400ms ease-in-out;
 }
@@ -170,6 +172,7 @@ h1 {
     box-shadow: 0 0 1em #101013;
     border-radius: .5em;
     transition: all 400ms;
+    text-shadow: none;
 }
 
 /*Animação menu*/
@@ -181,21 +184,21 @@ h1 {
 }
 
 #toggle:checked ~ .background-menu {
-    visibility: visible;
-    width: 600px;
+    visibility: visible; 
+    width: 550px;
     height: 600px;
     box-shadow: 0 0 4em #000000;
     z-index: 1;
 }
 
-#toggle:checked ~ .menu-itens {
-    right: 0;
+#toggle:checked ~ .background-menu .menu-itens {
     top: 0;
+    right: 20px;
+    width: 550px;
+    height: 600px;
     visibility: visible;
-    height: 100%;
-    width: 50%;
     opacity: 1;
-    z-index: 3;
+    display: flex;
 }
 
 article {
@@ -233,8 +236,9 @@ p {
     visibility: hidden;
     background-color: #ebebeb;
     padding: .5em;
+    margin: 0 .65em 0 .65em;
     border-radius: .5em;
-    box-shadow: 0 0 .2em black;
+    border: .1em solid black;
     flex-direction: column;
     text-align: justify;
 }
