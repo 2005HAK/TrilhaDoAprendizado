@@ -1,3 +1,5 @@
+var n1, n2, soma;
+
 n1 = prompt("Digite o valor 1: ");
 n2 = prompt("Digite o valor 2: ");
 

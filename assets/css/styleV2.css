@@ -2,6 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #dde4ff;
     margin: 0;
+    min-width: 340px;
 }
 
 body::-webkit-scrollbar {
@@ -38,6 +39,7 @@ header, footer{
 
 h1 {
     color: #ffffff;
+    font-size: 20pt;
 }
 
 .version {
@@ -50,13 +52,10 @@ h1 {
 
 .version a {
     border-left: .1em solid #a1a1a1;
+    border-right: .1em solid #a1a1a1;
     text-decoration: none;
     color: #ffffff;
     padding: .5em;
-}
-
-.version a:nth-child(3) {
-    border-right: .1em solid #a1a1a1;
 }
 
 .version a:hover {
@@ -155,7 +154,7 @@ footer {
     padding: 0 10% 0 10%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     article, figure, .version {
         margin: 5px;
     }
@@ -200,7 +199,7 @@ footer {
     }
     
     h1 {
-        font-size: 14pt;
+        font-size: 12pt;
     }
 
     h2 {

@@ -21,7 +21,7 @@ header {
     display: flex;
     flex-direction: row;
     background-color: #000000;
-    border-radius: 5em;
+    border-radius: .5em;
     align-items: center;
     box-shadow: 0 .1em 1em #6b6b6b;
     margin: .5em;
@@ -76,7 +76,7 @@ h1 {
     width: 80%;
     height: 5px;
     background-color: #ffffff;
-    border-radius: 5px;
+    border-radius: .5em;
     position: absolute;
     transition: .5s ease-in-out;
 }
@@ -168,7 +168,7 @@ h1 {
 .menu-itens ul li a:hover {
     color: #ffffff;
     box-shadow: 0 0 1em #101013;
-    border-radius: 5em;
+    border-radius: .5em;
     transition: all 400ms;
 }
 
@@ -200,7 +200,7 @@ h1 {
 
 article {
     background-color: #ffffff;
-    border-radius: 5em;
+    border-radius: .5em;
     margin: .5em;
     padding: 3em;
     box-shadow: 0 .1em 1em #6b6b6b;
@@ -211,27 +211,57 @@ p {
     margin: .5em;
 }
 
-#topicos {
-    display: none;
-}
-
-.conteudo {
-    visibility: hidden;
-}
-
-#topicos:checked ~ .conteudo{
-    visibility: visible;
-}
-
-.page, .button{
+.page, .botao {
     color: #ffffff;
     background-color: #000000;
     padding: .2em;
     text-align: center;
-    border-radius: 5em;
+    border-radius: .5em;
     margin-bottom: 1em;
     font-size: 18pt;
     text-shadow: .1em .1em .1em #1100ff;
+}
+
+.botao {
+    position: relative;
+    margin: .5em;
+    width: 7.5em;
+}
+
+.detalhes {
+    display: none;
+    visibility: hidden;
+    background-color: #ebebeb;
+    padding: .5em;
+    border-radius: .5em;
+    box-shadow: 0 0 .2em black;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.conteudos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.linkDetalhes {
+    text-decoration: none;
+    color: #000000;
+    background-color: #c2c2c2;
+    width: 10em;
+    text-align: center;
+    padding: .5em;
+    border-radius: .5em;
+    border: .1em solid #000000;
+    align-self: center;
+    margin-top: 1em;
+}
+
+.linkDetalhes:hover {
+    background-color: #d0dcff;
+    color: #0400ff;
+    border: .1em solid #0400ff;
 }
 
 .nomeperfil {
@@ -260,7 +290,7 @@ p {
 
 footer {
     background-color: #000000;
-    border-radius: 5em;
+    border-radius: .5em;
     margin: .5em;
     color: #ffffff;
     text-align: center;
