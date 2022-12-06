@@ -210,7 +210,7 @@ article {
     font-size: 14pt;
 }
 
-p {
+p, .codigo {
     margin: .5em;
 }
 
@@ -241,6 +241,51 @@ p {
     border: .1em solid black;
     flex-direction: column;
     text-align: justify;
+}
+
+.codigo {
+    background-color: #28282b;
+    height: 10em;
+    overflow-y: scroll;
+}
+
+.num {
+    color: #777797;
+    width: 1.5em;
+}
+
+.pink {
+    color: #dd0081;
+}
+
+.green {
+    color: #3bd100;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.yellow {
+    color: rgb(255, 255, 116);
+}
+
+.blue {
+    color: #777797;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+}
+
+td {
+    display: flex;
+    flex-direction: row;
+}
+
+.codigo ul {
+    margin: 0;
 }
 
 .conteudos {
