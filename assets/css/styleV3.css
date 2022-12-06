@@ -249,6 +249,10 @@ p {
     justify-content: space-between;
 }
 
+.invisivel {
+    visibility: hidden;
+}
+
 .linkDetalhes {
     text-decoration: none;
     color: #000000;
