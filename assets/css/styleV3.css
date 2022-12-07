@@ -122,7 +122,7 @@ h1 {
 /*Menu*/
 
 .background-menu {
-    position: fixed;
+    position: absolute;
     background-color: #0400ff;
     top: 0;
     right: 0;
@@ -188,7 +188,7 @@ h1 {
 #toggle:checked ~ .background-menu {
     visibility: visible; 
     width: 550px;
-    height: 600px;
+    height: 700px;
     box-shadow: 0 0 4em #000000;
     z-index: 1;
 }
@@ -197,7 +197,7 @@ h1 {
     top: 0;
     right: 20px;
     width: 550px;
-    height: 600px;
+    height: 700px;
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -296,6 +296,31 @@ p, .codigo {
 }
 .content {
     margin: 2em;
+}
+
+.versao {
+    width: 18em;
+    height: 6em;
+    border-radius: .5em;
+    background-color: #888888;
+    border: .1em solid #000000;
+}
+
+.subtopico {
+    border-bottom: .1em solid #000000;
+    border-radius: .5em .5em 0 0;
+    background-color: #ebebeb;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: .1em .1em .1em #1100ff;
+    padding: .3em;
+}
+
+.acessar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 4em;
 }
 
 footer {

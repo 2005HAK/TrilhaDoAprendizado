@@ -11,7 +11,7 @@ function detalhes(n) {
             } else {
                 detalhes[n].style.cssText = "visibility: visible;" + "display: flex;" + "border-radius: .5em;";
             }
-            botao[n].style.cssText = "text-shadow: none;"+"color: #000000;"+"background-color: #ebebeb;" + "border: none;" + "border-top: 1px solid black;" + "border-right: 1px solid black;" + "border-left: 1px solid black;" + "border-radius: .5em .5em 0 0;" + "top: 13px";
+            botao[n].style.cssText = "text-shadow: none;"+"color: #000000;"+"background-color: #ebebeb;" + "border: none;" + "border-top: .1em solid black;" + "border-right: .1em solid black;" + "border-left: .1em solid black;" + "border-radius: .5em .5em 0 0;" + "top: 13px";
         } else {
             detalhes[i].style.cssText = "visibility: hidden;" + "display: none;";
             botao[i].style.cssText = "background-color: #000000;";
