@@ -3,7 +3,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    min-width: 810px;
+    min-width: 1200px;
 }
 
 body::-webkit-scrollbar {
@@ -306,43 +306,4 @@ footer {
     text-align: center;
     padding: 1em;
     box-shadow: 0 .1em 1em #6b6b6b;
-}
-
-@media screen and (max-width: 1200px){
-    header{
-        height: 6em;
-    }
-
-    figure {
-        margin-left: 0;
-    }
-
-    h1 {
-        font-size: 20pt;
-    }
-
-    #icone {
-        margin-left: .5em;
-    }
-
-    article {
-        padding: .5em;
-    }
-
-    .page {
-        font-size: 14pt;
-    }
-
-    .botao {
-        font-size: 12pt;
-    }
-
-    .detalhes {
-        margin: .22em .60em 0 .60em;
-        font-size: 10pt;
-    }
-
-    footer {
-        padding: .2em;
-    }
 }
