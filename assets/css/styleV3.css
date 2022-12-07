@@ -3,6 +3,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    min-width: 810px;
 }
 
 body::-webkit-scrollbar {
@@ -29,6 +30,7 @@ header {
 
 figure {
     width: 10%;
+    margin-right: 5em;
 }
 
 #icone {
@@ -37,14 +39,14 @@ figure {
 }
 
 h1 {
-    width: 40%;
+    width: 60%;
     color: #ffffff;
     text-shadow: .1em .1em .1em #1100ff;
     font-size: 30pt;
 }
 
 #menu {
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -243,51 +245,6 @@ p, .codigo {
     text-align: justify;
 }
 
-.codigo {
-    background-color: #28282b;
-    height: 10em;
-    overflow-y: scroll;
-}
-
-.num {
-    color: #777797;
-    width: 1.5em;
-}
-
-.pink {
-    color: #dd0081;
-}
-
-.green {
-    color: #3bd100;
-}
-
-.white {
-    color: #ffffff;
-}
-
-.yellow {
-    color: rgb(255, 255, 116);
-}
-
-.blue {
-    color: #777797;
-}
-
-tr {
-    display: flex;
-    flex-direction: row;
-}
-
-td {
-    display: flex;
-    flex-direction: row;
-}
-
-.codigo ul {
-    margin: 0;
-}
-
 .conteudos {
     display: flex;
     flex-direction: row;
@@ -349,4 +306,43 @@ footer {
     text-align: center;
     padding: 1em;
     box-shadow: 0 .1em 1em #6b6b6b;
+}
+
+@media screen and (max-width: 1200px){
+    header{
+        height: 6em;
+    }
+
+    figure {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 20pt;
+    }
+
+    #icone {
+        margin-left: .5em;
+    }
+
+    article {
+        padding: .5em;
+    }
+
+    .page {
+        font-size: 14pt;
+    }
+
+    .botao {
+        font-size: 12pt;
+    }
+
+    .detalhes {
+        margin: .22em .60em 0 .60em;
+        font-size: 10pt;
+    }
+
+    footer {
+        padding: .2em;
+    }
 }
