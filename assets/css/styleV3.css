@@ -122,7 +122,7 @@ h1 {
 /*Menu*/
 
 .background-menu {
-    position: absolute;
+    position: fixed;
     background-color: #0400ff;
     top: 0;
     right: 0;
